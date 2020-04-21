@@ -1,0 +1,12 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom" color="primary">
+    
+    <ion-tab-button *ngFor="let tab of getTabs()" [tab]="tab.path">
+      <ion-icon src="assets/svg/{{ tab.icon }}.svg"></ion-icon>
+      <ion-label>{{ tab.title | translate }}</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>
